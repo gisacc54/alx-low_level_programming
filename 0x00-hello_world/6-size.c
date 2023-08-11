@@ -1,7 +1,11 @@
 #include <stdio.h>
 
- /**
- *  This is main fuction is Entry point of our program
+/**
+ *  main - print the phrase with proper grammar,
+ *  but the outcome is a piece of art,
+ *
+ *  Return: Always 0 (Success)
+ *
  */
 int main(void)
 {
