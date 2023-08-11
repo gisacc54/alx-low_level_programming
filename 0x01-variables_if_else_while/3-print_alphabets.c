@@ -8,7 +8,11 @@
 int main(void)
 {
 char myChar;
-for (myChar = 'a'; myChar <= 'Z'; myChar++)
+for (myChar = 'a'; myChar <= 'z'; myChar++)
+{
+putchar(myChar);
+}
+for (myChar = 'A'; myChar <= 'Z'; myChar++)
 {
 putchar(myChar);
 }
