@@ -1,9 +1,10 @@
 #include <stdio.h>
 
-/**
- *  This is main fuction is 
- *  is Entry point of our 
- *  our program
+ /**
+ *  This is main fuction is
+ *
+ *  is Entry point of our program 
+ *
  */
 int main()
 {
