@@ -8,11 +8,11 @@ int main()
     long long int longlongintType;
     float floatType;
     
-    printf("Size of an char: %zu byte(s)\n", sizeof(charType));
-    printf("Size of an int: %zu byte(s)\n", sizeof(intType));
-    printf("Size of an long int: %zu byte(s)\n", sizeof(longintType));
-    printf("Size of an long long int: %zu byte(s)\n", sizeof(longlongintType));
-    printf("Size of an float: %zu byte(s)\n", sizeof(floatType));
+    printf("Size of an char: %lu byte(s)\n", (unsigned long)sizeof(charType));
+    printf("Size of an int: %lu byte(s)\n", (unsigned long)sizeof(intType));
+    printf("Size of an long int: %lu byte(s)\n", (unsigned long)sizeof(longintType));
+    printf("Size of an long long int: %lu byte(s)\n", (unsigned long)sizeof(longlongintType));
+    printf("Size of an float: %lu byte(s)\n", (unsigned long)sizeof(floatType));
 
     return 0;
 }
