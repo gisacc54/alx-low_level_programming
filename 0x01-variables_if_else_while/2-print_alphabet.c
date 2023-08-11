@@ -12,5 +12,6 @@ for (myChar = 'a'; myChar < 'z'; myChar++)
 {
 putchar(myChar);
 }
+putchar('\n');
 return (0);
 }
