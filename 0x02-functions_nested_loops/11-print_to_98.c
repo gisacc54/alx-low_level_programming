@@ -1,12 +1,25 @@
+#include <stdio.h>
 #include "main.h"
 
 /**
-*   add - This is add fuction
+*   print_to_98 - This is print_to_98 fuction
 *   @n: int to cheack
-*   @m: int to cheack
-*   Return: sum
 */
-int add(int n, int m)
+void print_to_98(int n)
 {
-    return (n + m);
+    int i;
+    if (n>98)
+    {
+        for (i = n; i>98; i--)
+        {
+            printf("%d",i)
+        }
+    }
+    else
+    {
+        for (i = n; i<98; i++)
+        {
+            printf("%d",i)
+        }
+    }
 }
