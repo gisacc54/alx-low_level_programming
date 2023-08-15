@@ -13,7 +13,7 @@ int h, m, k;
 		for (m = 0; m < 9; m++)
 		{
 			if (m == 0)
-			_putchar(m)
+			_putchar(m);
 			k = h * m;
 			_putchar(k + '0');
 			_putchar(',');
