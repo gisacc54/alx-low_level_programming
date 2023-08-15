@@ -16,5 +16,6 @@ int h, m;
 			_putchar(k + '0');
             _putchar(',');
 		}
+        _putchar('\n');
 	}
 }
