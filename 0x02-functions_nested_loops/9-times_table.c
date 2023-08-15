@@ -13,7 +13,7 @@ int h, m, k;
 		for (m = 0; m <= 9; m++)
 		{
 			k = h * m;
-			if (j == 0)
+			if (m == 0)
 			{
 				_putchar(k + '0');
 			}
@@ -31,7 +31,6 @@ int h, m, k;
 				_putchar((k / 10) + '0');
 				_putchar((k % 10) + '0');
 			}
-		}
 		}
 		_putchar('\n');
 	}
