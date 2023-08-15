@@ -10,10 +10,9 @@ int h, m, k;
 
 	for (h = 0; h < 9; h++)
 	{
+		_putchar(0);
 		for (m = 0; m < 9; m++)
 		{
-			if (m == 0)
-			_putchar(m);
 			k = h * m;
 			_putchar(k + '0');
 			_putchar(',');
