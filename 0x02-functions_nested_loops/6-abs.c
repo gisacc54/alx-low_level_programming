@@ -2,13 +2,13 @@
 
 
 /**
-*   print_sign - This is print_sign fuction
+*   _abs - This is _abs fuction
 *   @n: int to cheack
 *   Return: 0
 */
-int print_sign(int n)
+int _abs(int n)
 {
-if (n > 0)
+if (n >= 0)
 {
 return (+1);
 }
