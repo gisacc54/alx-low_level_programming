@@ -12,7 +12,7 @@ int h, m,k;
 	{
 		for (m = 0; m < 9; m++)
 		{
-            k == h*m;
+            k = h*m;
 			_putchar(k + '0');
             _putchar(',');
 		}
