@@ -1,9 +1,8 @@
 #include "main.h"
 
 /**
- * print_square - This is print_square fuction
+ * print_triangle - This is print_triangle fuction
  * @size: times n
- *
  */
 void print_triangle(int size)
 
