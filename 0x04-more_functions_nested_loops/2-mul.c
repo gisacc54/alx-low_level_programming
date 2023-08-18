@@ -8,5 +8,5 @@
 */
 int mul(int a, int b)
 {
-return (c >= '0' && c <= '9');
+return (a*b);
 }
