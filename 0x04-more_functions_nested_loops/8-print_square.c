@@ -13,7 +13,7 @@ int k, m;
 		_putchar('\n');
 	} else
 	{
-		for (k = 0; k < skze; k++)
+		for (k = 0; k < size; k++)
 		{
 			for (m = 0; m < size; m++)
 			{
