@@ -3,6 +3,7 @@
 /**
 *   _strlen - This is _strlen fuction
 *   @s: pointer n
+*   Return: int
 */
 int _strlen(char *s)
 {
@@ -11,6 +12,6 @@ for (; *s++;)
 {
 i++;
 }
-   
+
 return (i);
 }
