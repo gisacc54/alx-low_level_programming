@@ -1,10 +1,20 @@
 #include "main.h"
 
 /**
-*   reset_to_98 - This is reset_to_98 fuction
-*   @n: pointer n
+*   print_array - This is print_array fuction
+*   @a: pointer a
+*   @n: valiable n
 */
-void reset_to_98(int *n)
+void print_array(int *a, int n)
 {
-*n = 98;
+int i;
+
+for (i = 0; i < n; i++)
+{
+if (i == 0)
+printf("%d", a[i]);
+else
+printf(", %d", a[i]);
+}
+printf("\n");
 }

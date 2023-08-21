@@ -1,10 +1,17 @@
 #include "main.h"
 
 /**
-*   reset_to_98 - This is reset_to_98 fuction
-*   @n: pointer n
+*   _strcpy - This is _strcpy fuction
+*   @dest: pointer dest
+*   @src: pointer src
+*   Return: char
 */
-void reset_to_98(int *n)
+char *_strcpy(char *dest, char *src)
 {
-*n = 98;
+int a;
+
+for (a = 0; src[a] != '\0'; a++)
+dest[a] = src[a];
+dest[a] = '\0';
+return (dest);
 }

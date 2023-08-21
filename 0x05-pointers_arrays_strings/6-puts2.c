@@ -1,10 +1,15 @@
 #include "main.h"
 
 /**
-*   reset_to_98 - This is reset_to_98 fuction
-*   @n: pointer n
+*   puts2 - This is puts2 fuction
+*   @str: pointer str
 */
-void reset_to_98(int *n)
+void puts2(char *str)
 {
-*n = 98;
+int string;
+
+for (string = 0; str[string] != '\0'; string++)
+if (string % 2 == 0)
+_putchar(str[string]);
+_putchar('\n');
 }

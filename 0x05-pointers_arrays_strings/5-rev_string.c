@@ -1,10 +1,23 @@
 #include "main.h"
 
 /**
-*   reset_to_98 - This is reset_to_98 fuction
-*   @n: pointer n
+*   rev_string - This is rev_string fuction
+*   @s: pointer s
 */
-void reset_to_98(int *n)
+void rev_string(char *s)
 {
-*n = 98;
+int a = 0, b, c;
+char d;
+
+while (s[a] != '\0')
+{
+a++;
+}
+c = a - 1;
+for (b = 0; c >= 0 && b < c; c--, b++)
+{
+d = s[b];
+s[b] = s[c];
+s[c] = d;
+}
 }

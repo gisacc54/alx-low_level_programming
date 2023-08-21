@@ -1,10 +1,20 @@
 #include "main.h"
 
 /**
-*   reset_to_98 - This is reset_to_98 fuction
-*   @n: pointer n
+*   print_rev - This is print_rev fuction
+*   @s: pointer s
 */
-void reset_to_98(int *n)
+void print_rev(char *s)
 {
-*n = 98;
+int i, j;
+
+j = 0;
+while (s[j] != '\0')
+j++;
+
+for (i = j - 1; i >= 0; i--)
+{
+_putchar(s[i]);
+}
+_putchar('\n');
 }
