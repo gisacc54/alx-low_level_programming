@@ -4,7 +4,7 @@
 
 /**
 *   leet - This is leet fuction
-*   @str: pointer
+*   @s: pointer
 *   Return: *char
 */
 char *leet(char *s)
