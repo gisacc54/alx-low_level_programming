@@ -18,8 +18,8 @@ dest_new++;
 while (*src != '\0')
 {
 *dest_new = *src;
-src++;
 dest_new++;
+src++;
 }
 *dest_new = '\0'
 return (dest);
