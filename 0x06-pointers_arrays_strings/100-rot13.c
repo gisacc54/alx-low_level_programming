@@ -8,17 +8,21 @@
 */
 char *rot13(char *str)
 {
-char *ptr = str;
+int i, j;
 
-while (*ptr != '\0')
+char x[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+char y[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
+
+for (i = 0; str[i] != '\0'; i++)
 {
-if ((*ptr >= 'a' && *ptr <= 'z') || (*ptr >= 'A' && *ptr <= 'Z'))
+for (j = 0; x[j] != '\0'; j++)
 {
-char base = (*ptr >= 'a' && *ptr <= 'z') ? 'a' : 'A';
-*ptr = (char)(((*ptr - base + 13) % 26) + base);
+if (str[i] == x[j])
+{
+str[i] = y[j];
+break;
 }
-
-ptr++;
+}
 }
 
 return (str);
