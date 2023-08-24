@@ -1,25 +1,25 @@
 #include "main.h"
 
 /**
-*   rot13 - This is rot13 fuction
-*   @str: pointer
-*   Return: *char
+*   print_number - This is print_number fuction
+*   @n: int
+*   Return: int
 */
 
 void print_number(int n)
 {
-	unsigned int x;
+int i;
 
-	if (n < 0)
-	{
-		_putchar('-');
-		n *= -1;
-	}
+if (n < 0)
+{
+_putchar('-');
+n *= -1;
+}
 
-	x = n;
+i = n;
 
-	if (x / 10)
-		print_number(x / 10);
+if (i / 10)
+print_number(i / 10);
 
-	_putchar(x % 10 + '0');
+_putchar(i % 10 + '0');
 }
