@@ -21,6 +21,6 @@ while (*src != '\0')
 dest_new++;
 src++;
 }
-*dest_new = '\0'
+*dest_new = '\0';
 return (dest);
 }
