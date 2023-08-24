@@ -1,26 +1,4 @@
 #include "main.h"
-#include <stdbool.h>
-#include <ctype.h>
-
-/**
-*   is_separator - This is is_separator fuction
-*   @c: pointer
-*   Return: bool
-*/
-bool is_separator(char c)
-{
-char separators[] = " \t\n,;.!?\"(){}";
-
-for (int i = 0; separators[i] != '\0'; i++)
-{
-if (c == separators[i])
-{
-return (true);
-}
-}
-
-return (false);
-}
 
 /**
 *   cap_string - This is cap_string fuction
