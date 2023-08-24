@@ -7,24 +7,19 @@
 *   @str: pointer
 *   Return: *char
 */
-char *leet(char *str)
+char *leet(char *s)
 {
-char *ptr = str;
-char *leet_chars = "aAeEoOtTlL";
-char *leet_subs = "4433007711";
+int i, j;
+char a[] = "aAeEoOtTlL";
+char b[] = "4433007711";
 
-while (*ptr != '\0')
+for (i = 0; *(s + i); i++)
 {
-for (int i = 0; leet_chars[i] != '\0'; i++)
+for (j = 0; j <= 9; j++)
 {
-if (*ptr == leet_chars[i])
-{
-*ptr = leet_subs[i];
-break;
+if (a[j] == s[i])
+s[i] = b[j];
 }
 }
-ptr++;
-}
-
-return (str);
+return (s);
 }
