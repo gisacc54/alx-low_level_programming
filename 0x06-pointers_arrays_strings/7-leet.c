@@ -10,8 +10,8 @@
 char *leet(char *str)
 {
 char *ptr = str;
-char *leet_chars = "aeotlAEOTL";
-char *leet_subs = "430710";
+char *leet_chars = "aAeEoOtTlL";
+char *leet_subs = "4433007711";
 
 while (*ptr != '\0')
 {
