@@ -1,5 +1,5 @@
 #include "main.h"
-
+#include <stdio.h>
 /**
 *   _strchr - This is _strchr fuction
 *   @s: pointer s
@@ -8,13 +8,18 @@
 */
 char *_strchr(char *s, char c)
 {
-while (*s != '\0')
+int a;
+
+while (1)
 {
-if (*s == c)
+a = *s++;
+if (a == c)
 {
-return (s);
+return (s - 1);
 }
-s++;
-}
+if (a == 0)
+{
 return (NULL);
+}
+}
 }
