@@ -9,13 +9,26 @@
 */
 unsigned int _strspn(char *s, char *accept)
 {
-unsigned int length = 0;
+int i, j, f, flag;
 
-while (*s != '\0' && strchr(accept, *s) != NULL)
-{
-length++;
-s++;
-}
+	f = 0;
 
-return (length);
+	for (i = 0; s[i] != '\0'; i++)
+	{
+		flag = 0;
+		for (j = 0; accept[j] != '\0'; j++)
+		{
+			if (s[i] == accept[j])
+			{
+				f++;
+				flag = 1;
+			}
+		}
+		if (flag == 0)
+		{
+			return (f);
+		}
+	}
+
+	return (0);
 }
