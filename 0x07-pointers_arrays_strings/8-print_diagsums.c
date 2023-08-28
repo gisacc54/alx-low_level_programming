@@ -19,5 +19,5 @@ for (j = 0; j < size; j++)
 p = (j * size) + (size - 1 - j);
 r += *(a + p);
 }
-printf("%i, %i\n", l, r);
+printf("%i, %i\n ", l, r);
 }
