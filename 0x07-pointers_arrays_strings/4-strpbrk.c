@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
 *   _strpbrk - This is _strpbrk fuction
